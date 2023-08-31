@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+header{
+    width: 100%;
+    height: 100vh; 
+}
+.contenedor{
+    padding: 10px 10%;
+
+}
+/*Barra de navegacion*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav h1{
+    width: 160px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+/*Gerardo Web*/
+.title {
+    width: 160px;
+    cursor: pointer;
+    font-size: 25px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+.title::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.title:hover::after {
+    width: 100%;
+}
+
+/*Acerca de mi animacion*/
+.subtitle {
+    width: 90%;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 35px;
+    list-style: 1.5;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+.subtitle::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.subtitle:hover::after {
+    width: 23%;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}   
+nav ul li a:hover::after {
+    width: 100%;
+}
+/*Contenido Principal*/
+.presentacion{
+    margin-top: 20%;
+    align-items: center;
+    font-size: 30px;
+    min-height: 200px; 
+}
+.presentacion h1{
+    display: flex;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    max-width: 100%;
+}
+.presentacion h1 span{
+    display: flex;
+    color: #ff004f;
+    margin-top:8% ;
+    margin-left:-65% ;
+}
+.imagen {
+
+    margin-top: -28%;
+    margin-left: 72%;
+    width: 120%;
+    height: auto;
+    max-width: 30%;
+    border: 4px solid rgb(245, 248, 248);
+}
+.acerca{
+    padding: 80px 0;
+    color: #f7f2f2;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*Acerca de*/
+.acercaUno{
+    flex-basis: 35%;
+}
+.acercaUno img{
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.acercaDos{
+    flex-basis: 60%;
+}
+
+.social{
+     padding-top: 20px;
+     text-align: center;
+}
+.social a {
+    color: #adadad;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
+/*Contactos*/
+.contactos{
+    padding: 3rem;
+    margin: 0 auto;
+}
+.contenedor-form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2rem;
+}
+.contenedor-form input{
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.contenedor-form textarea{
+    height: 150px;
+    background: none;
+    color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #fff;
+}
+.btn-enviar{
+    padding: 10px 20px;
+    margin: 1rem;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.btn-enviar:hover{
+    background-color: #ff004f;
+    box-shadow: none;
+}
+.card{
+    margin-top: 8%;
+    margin-left: 12%;
+    width: 100%;
+    height: auto;
+    max-width: 15%;
+    padding: 20px;
+    border: 2px solid rgba(123, 7, 7, 0.675);
+    margin: auto;
+}
